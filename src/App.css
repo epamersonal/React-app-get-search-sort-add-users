@@ -27,6 +27,113 @@
 .App-link {
   color: #61dafb;
 }
+.App li {
+  list-style-type: none;
+}
+.row {
+  padding: 1px;
+}
+input {
+  width: 100%;
+  height: 2rem;
+  font-size: 18px;
+  border: none;
+}
+.add-user {
+  padding: 1px;
+}
+.add-user form {
+  border-top: 1px solid #282c34;
+}
+form > input {
+  width: 20%;
+  border: none;
+}
+form > button {
+  width: 20%;
+  height: 2em;
+}
+table {
+  width: 100%;
+  border: 1px dashed #000;
+  border-collapse: collapse;
+}
+thead tr th {
+  border: 1px dashed #000;
+  background-color: #f2f2f2;
+  text-align: left;
+  width: 20%;
+}
+tbody tr td {
+  border: 1px dashed #000;
+}
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.preloader {
+  position: fixed;
+  height: 2em;
+  width: 2em;
+  overflow: visible;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.thin_text {
+  font-weight: 500
+}
+
+.sorting__button {
+  display: inline-block;
+  opacity: 0.9;
+  border: none;
+  background-color: transparent;
+  float: right;
+}
+
+.sort-desc .little-arrow {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  font-size: 14px;
+  z-index: -1;
+  position: relative;
+  display: inline-block;
+}
+
+.sort-asc .little-arrow {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  font-size: 14px;
+  z-index: -1;
+  position: relative;
+  display: inline-block;
+}
+
+#page-numbers {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#page-numbers > li {
+  margin-right: 0.3em;
+  color: #000;
+  user-select: none;
+  cursor: pointer;
+}
+
+#page-numbers > li:hover {
+  color: grey;
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +143,34 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 480px) {
+  form > input {
+   font-size: 10px;
+   width: 100%;
+  }
+
+  form > button {
+    width: 100%;
+  }
+  
+  table thead th {
+    display: block;
+    width: 100%;
+  }
+  
+  table tr {
+    display: block;
+  }
+  
+  table td {
+    display: block;
+    font-size: .8em;
+    text-align: center;
+  }
+  .thin_text {
+    text-align: center;
+  }
+}
+
+
